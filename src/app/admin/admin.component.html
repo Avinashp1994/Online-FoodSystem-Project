@@ -1,0 +1,18 @@
+<div class="login">
+  <h2 class="login-header">Admin Log in</h2>
+  <form [formGroup]="loginForm" class="login-container" (ngSubmit)="login()">
+
+    <p>
+      <input type="email" placeholder="Email" formControlName="email" autofocus>
+    </p>
+
+    <p>
+      <input type="password" placeholder="Password" formControlName="password">
+    </p>
+
+    <p>
+      <input type="submit" value="Log in" (click)="onLoginButtonClicked()">
+    </p>
+
+  </form>
+</div>

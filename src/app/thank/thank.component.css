@@ -1,0 +1,21 @@
+h1{
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    margin-top: 10%;
+}
+
+h2{
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+    font-family: 'Times New Roman', Times, serif;
+    color:crimson;
+}
+
+button{
+    margin-top: 2%;
+    margin-left: 870px;
+    width: 80px;
+}

@@ -1,0 +1,46 @@
+.container{
+    margin-top: 8%;
+    width: 800px;
+    
+}
+
+img{
+    height: 500px;
+    width: 350px;
+}
+
+h1 {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+h2{
+    font-weight: bold;
+}
+
+.card-title{
+    margin-top: 15%;
+}
+
+.card-text{
+    margin-left: 70px;
+    margin-top: 10%;
+}
+
+h3{
+    margin-left: 120px;
+    font-weight: bold;
+}
+button{
+    margin-top: 15%;
+    width: 150px;
+    height: 45px;
+    font-weight: bolder;
+}
+
+input{
+    font-size: 20px;
+    font-weight: bold;
+    border-color: crimson;
+}
+

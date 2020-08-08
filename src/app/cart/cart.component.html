@@ -1,0 +1,28 @@
+<div class="container">
+<table class="table table-striped">
+  <thead>
+    <tr style="font-weight: bold;font-size: 20px;color: darkorchid">
+      <th scope="col">#</th>
+      <th scope="col">Name</th>
+      <th scope="col">Price</th>
+      <th scope="col">Remove</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor='let c of cart'>
+      <td>{{c.id}}</td>
+      <td>{{c.name}}</td>
+      <td>{{c.price}}</td>
+      <td><input type="button" value="Delete" class="btn btn-danger"></td>
+    </tr>
+  </tbody>
+</table>
+<br>
+
+
+<label>Total:</label>
+{{sum}}
+<br>
+
+<input type="button" value="Back-To-Order" class="btn btn-warning" (click)="back()">
+</div>

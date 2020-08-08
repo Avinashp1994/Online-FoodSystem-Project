@@ -1,0 +1,188 @@
+<div>
+
+  <ul class="nav nav-tabs" style="height:50px">
+    <li routerLinkActive=""><a [routerLink]="['/app-home']">HOME</a></li>
+    <li routerLinkActive=""><a [routerLink]="['/app-fruit']">FRUITS</a></li>
+    <li routerLinkActive="active"><a [routerLink]="['/app-vegetable']">VEGETABLES</a></li>
+    <li><a [routerLink]="['/app-cart']">
+        <span class="glyphicon glyphicon-shopping-cart" style="font-size: 32px;font-weight: bold;color: red;"></span>
+      </a></li>
+    <li><button [routerLink]="['/app-login-form']" type="button" class="btn btn-outline-warning" style="margin-left: 1200px;height: 50px;width: 150px;color: black;font-weight: bold;border-color: black;">LogOut</button></li>
+  </ul>
+  <router-outlet></router-outlet>
+</div>
+
+
+
+
+<div class="divider"></div>
+<h1>WELCOME TO ONLINE VEGETABLES MARCKET</h1>
+
+
+
+
+<div class="container">
+  <div class="row">
+
+
+
+    <div class="col-md-4">
+      <div class="card" style="width: 28rem;">
+        <img class="card-img-top" src="assets/wat.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h3 class="card-title">Green Peas</h3>
+          <h2 class="card-text">{{"MRP.60/RS"}}</h2>
+          <h5>{{"1/KG"}}</h5>
+          <a href="#" class="btn btn-warning">
+            <span class="glyphicon glyphicon-shopping-cart"></span> Add
+          </a>
+          <a [routerLink]="['/app-greenpeas']" class="btn btn-primary">Buy Now</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card" style="width: 28rem; margin-left: 50px;">
+        <img class="card-img-top" src="assets/oni.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h3 class="card-title">Onion</h3>
+          <h2 class="card-text">{{"MRP.160/RS"}}</h2>
+          <h5>{{"1/KG"}}</h5>
+          <a href="#" class="btn btn-warning">
+            <span class="glyphicon glyphicon-shopping-cart"></span> Add
+          </a>
+          <a [routerLink]="['/app-onion']" class="btn btn-primary">Buy Now</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card" style="width: 28rem; margin-left: 100px">
+        <img class="card-img-top" src="assets/caps.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h3 class="card-title">Capsicum</h3>
+          <h2 class="card-text">{{"MRP.40/RS"}}</h2>
+          <h5>{{"1/KG"}}</h5>
+          <a href="#" class="btn btn-warning">
+            <span class="glyphicon glyphicon-shopping-cart"></span> Add
+          </a>
+          <a [routerLink]="['/app-capsicum']" class="btn btn-primary">Buy Now</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+
+    <div class="col-md-4">
+      <div class="card" style="width: 28rem; ">
+        <img class="card-img-top" src="assets/tom.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h3 class="card-title">Tomato</h3>
+          <h2 class="card-text">{{"MRP.35/RS"}}</h2>
+          <h5>{{"1/KG"}}</h5>
+          <a href="#" class="btn btn-warning">
+            <span class="glyphicon glyphicon-shopping-cart"></span> Add
+          </a>
+          <a href="#" class="btn btn-primary">Buy Now</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card" style="width: 28rem; margin-left: 50px">
+        <img class="card-img-top" src="assets/car.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h3 class="card-title">Carrot</h3>
+          <h2 class="card-text">{{"MRP.85/RS"}}</h2>
+          <h5>{{"1/KG"}}</h5>
+          <a href="#" class="btn btn-warning">
+            <span class="glyphicon glyphicon-shopping-cart"></span> Add
+          </a>
+          <a href="#" class="btn btn-primary">Buy Now</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card" style="width: 28rem; margin-left: 100px">
+        <img class="card-img-top" src="assets/flr.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h3 class="card-title">Cauliflower</h3>
+          <h2 class="card-text">{{"MRP.70/RS"}}</h2>
+          <h5>{{"1/KG"}}</h5>
+          <a href="#" class="btn btn-warning">
+            <span class="glyphicon glyphicon-shopping-cart"></span> Add
+          </a>
+          <a href="#" class="btn btn-primary">Buy Now</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+
+<div class="container">
+  <div class="row">
+
+    <div class="col-md-4">
+      <div class="card" style="width: 28rem; ">
+        <img class="card-img-top" src="assets/pot.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h3 class="card-title">Potato</h3>
+          <h2 class="card-text">{{"MRP.50/RS"}}</h2>
+          <h5>{{"1/KG"}}</h5>
+          <a href="#" class="btn btn-warning">
+            <span class="glyphicon glyphicon-shopping-cart"></span> Add
+          </a>
+          <a href="#" class="btn btn-primary">Buy Now</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card" style="width: 28rem; margin-left: 50px">
+        <img class="card-img-top" src="assets/brinj.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h3 class="card-title">Brinjal</h3>
+          <h2 class="card-text">{{"MRP.80/RS"}}</h2>
+          <h5>{{"1/KG"}}</h5>
+          <a href="#" class="btn btn-warning">
+            <span class="glyphicon glyphicon-shopping-cart"></span> Add
+          </a>
+          <a href="#" class="btn btn-primary">Buy Now</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card" style="width: 28rem; margin-left: 100px">
+        <img class="card-img-top" src="assets/bhendi.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h3 class="card-title">Ladies Finger/Bhendi</h3>
+          <h2 class="card-text">{{"MRP.70/RS"}}</h2>
+          <h5>{{"1/KG"}}</h5>
+          <a href="#" class="btn btn-warning">
+            <span class="glyphicon glyphicon-shopping-cart"></span> Add
+          </a>
+          <a href="#" class="btn btn-primary">Buy Now</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+
+<div style="background-color: slategray; height: 400px; margin-top: 10%;">
+  <div style="background-color: sandybrown; height: 10px;"></div>
+ 
+</div>
+
+

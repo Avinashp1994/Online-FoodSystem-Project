@@ -1,0 +1,51 @@
+
+<div>
+
+  <ul class="nav nav-tabs" style="height:50px">
+    <li routerLinkActive="active"><a [routerLink]="['/app-registeruser']">REGISTER-USER</a></li>
+    <li routerLinkActive="active"><a [routerLink]="['/app-userorder']">USER-ORDER</a></li>
+    
+    <li><button [routerLink]="['/app-login-form']" type="button" class="btn btn-outline-warning" style="margin-left: 1350px;height: 50px;width: 150px;color: black;font-weight: bold;border-color: black;">LogOut</button></li>
+  </ul>
+  <!-- <router-outlet></router-outlet> -->
+</div>
+
+
+<div class="container">
+<app-custchild [all]='getTotalCustomerCount()' [male]='getMaleCustomerCount()' [female]='getFemaleCustomerCount()'
+  (countRadioButtonSelectionChanged)='onEmployeeCountRadioButtonChange($event)'>
+</app-custchild>
+<br>
+<br>
+<table class="table table-striped" style="background-color: darkolivegreen;">
+  <thead>
+    <tr style="font-weight: bold;font-size: 20px;">
+      <th>FIRST_NAME</th>
+      <th>LAST_NAME</th>
+      <th>ADDRESS</th>
+      <th>EMAIL</th>
+      <th>DOB</th>
+      <th>GENDER</th>
+      <th>USERNAME</th>
+    
+    </tr>
+  </thead>
+  <tbody>
+    <ng-container *ngFor='let c of customers'>
+      <tr *ngIf="selecetedEmployeeCountRadioButton=='All' ||
+                  selecetedEmployeeCountRadioButton==c.gender" style="font-weight: bold;">
+        <td>{{c.firstname | uppercase | custtitle:c.gender}}</td>
+        <td>{{c.lastname |uppercase}}</td>
+        <td>{{c.address | uppercase}}</td>
+        <td>{{c.email}}</td>
+        <td>{{c.dob | date:'fullDate'}}</td>
+        <td>{{c.gender | uppercase}}</td>
+        <td>{{c.username}}</td>
+
+
+      </tr>
+    </ng-container>
+  </tbody>
+</table>
+</div>
+

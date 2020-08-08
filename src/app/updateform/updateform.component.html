@@ -1,0 +1,70 @@
+<mat-toolbar style="background-color: cornflowerblue">
+  <span style="font-weight: bold;">{{"MODIFY ORDER"}}</span>
+  <span class="fill-remaining-space"></span>
+  <button class="btn-dialog-close" mat-stroked-button (click)="onClose()" tabIndex="-1" style="background-color:red;">
+    <mat-icon>clear</mat-icon>
+  </button>
+
+</mat-toolbar>
+<form [formGroup]="form" class="normal-form">
+  <mat-grid-list cols="2" rowHeight="300px">
+    <mat-grid-tile style="width:200px;">
+      <div class="controles-container">
+        <mat-form-field>
+          <input formControlName='firstname' matInput placeholder="Enter Your First-Name*" [(ngModel)]='model.firstname'>
+          <mat-error>This Field Is Mandotary</mat-error>
+        </mat-form-field>
+        <mat-form-field>
+          <input formControlName='lastname' matInput placeholder="Enter Your Last-Name*" [(ngModel)]='model.lastname'>
+          <mat-error>This Field Is Mandotary</mat-error>
+        </mat-form-field>
+        <mat-form-field>
+          <input formControlName='email' matInput placeholder="Enter Your email*" [(ngModel)]='model.email'>
+          <mat-error>Email is Invalid</mat-error>
+        </mat-form-field>
+        <mat-form-field>
+          <input formControlName='mobile' matInput placeholder="Enter Your Mobile-Number*" [(ngModel)]='model.mobile'>
+          <mat-error *ngIf="form.controls['mobile'].errors?.required">This Field Is Mandotary</mat-error>
+          <mat-error *ngIf="form.controls['mobile'].errors?.minlength">Minimum 8 Characters Needed</mat-error>
+        </mat-form-field>
+      </div>
+    </mat-grid-tile>
+
+
+
+
+    <mat-grid-tile style="margin-top: 26px;">
+      <div class="controles-container">
+        <!-- <div class="add-bottom-padding">
+          <mat-radio-group formControlName='gender' class="gend" >
+            <mat-radio-button value="1">Male</mat-radio-button> 
+            <mat-radio-button value="2">Female</mat-radio-button>
+            <mat-radio-button value="3">Other</mat-radio-button>
+          </mat-radio-group>
+        </div> -->
+        <mat-form-field>
+          <input formControlName='pincode' matInput placeholder="Enter Your Pincode*" [(ngModel)]='model.pincode'>
+          <mat-error>This Field Is Mandotary</mat-error>
+        </mat-form-field>
+        <mat-form-field>
+          <input formControlName='city' matInput placeholder="Enter Your City*" [(ngModel)]='model.city'>
+        </mat-form-field>
+        <mat-form-field>
+          <input formControlName='address' matInput placeholder="Enter Your Address*" [(ngModel)]='model.address'>
+        </mat-form-field>
+        <mat-form-field>
+          <mat-select formControlName='select' matInput placeholder="Select*" [(ngModel)]='model.select'>
+            <mat-option>None</mat-option>
+            <ng-container *ngFor="let sel of select">
+              <mat-option value="{{sel.id}}">{{sel.value}}</mat-option>
+            </ng-container>
+          </mat-select>
+        </mat-form-field>
+        <div class="button-row">
+          <button mat-raised-button color='primary' type="submit" [disabled]='form.invalid' (click)="onSubmit()">Submit</button>
+          <button mat-raised-button color='warn' (click)='onclear()'>Clear</button>
+        </div>
+      </div>
+    </mat-grid-tile>
+  </mat-grid-list>
+</form>

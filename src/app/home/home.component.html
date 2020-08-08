@@ -1,0 +1,165 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<div>
+
+  <ul class="nav nav-tabs" style="height:50px">
+    <li routerLinkActive="active"><a [routerLink]="['/app-home']">HOME</a></li>
+    <li routerLinkActive="active"><a [routerLink]="['/app-fruit']">FRUITS</a></li>
+    <li routerLinkActive="active"><a [routerLink]="['/app-vegetable']">VEGETABLES</a></li>
+    <li><a [routerLink]="['/app-cart']">
+        <span class="glyphicon glyphicon-shopping-cart" style="font-size: 32px;font-weight: bold;color: red;"></span>
+      </a></li>
+    <li><button [routerLink]="['/app-login-form']" type="button" class="btn btn-outline-warning" style="margin-left: 1200px;height: 50px;width: 150px;color: black;font-weight: bold;border-color: black;">LogOut</button></li>
+  </ul>
+  <router-outlet></router-outlet>
+</div>
+
+<div class="divider"></div>
+
+<h1> 
+  <marquee><span style="color: crimson;">20%</span> Of Discount All <span style="color: darkolivegreen">Fruits</span> <span style="color: darkred"> &</span> <span style="color: dimgrey"> Vegetables</span></marquee>
+</h1>
+<div class="divider"></div>
+
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner" style="height: 600px; width: 1000px">
+    <div class="carousel-item active" data-interval="1000">
+      <img class="d-block w-100" src="assets/img4.jpg" alt="First slide">
+    </div>
+    <div class="carousel-item" data-interval="1000">
+      <img class="d-block w-100" src="assets/img5.jpg" alt="Second slide">
+    </div>
+    <div class="carousel-item" data-interval="1000">
+      <img class="d-block w-100" src="assets/img6.jpg" alt="Third slide">
+    </div>
+  </div>
+  <!-- <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a> -->
+</div>
+
+
+<div class="container">
+  <div class="row">
+
+
+
+    <div class="col-md-4">
+      <div class="card" style="width: 28rem;">
+        <img class="card-img-top" src="assets/img11.jpg" alt="Card image cap" style="height: 250px;">
+        <div class="card-body" style="background-color: lightcoral">
+          <h5 class="card-title">ALL FRUITS</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+            content.</p>
+          <a class="btn btn-info" style="margin-left: 70px;">Subscribers</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card" style="width: 28rem; margin-left: 50px;">
+        <img class="card-img-top" src="assets/img4.jpg" alt="Card image cap" style="height: 250px;">
+        <div class="card-body" style="background-color: lightslategray">
+          <h5 class="card-title">VEGETABLES</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+            content.</p>
+          <a class="btn btn-info" style="margin-left: 70px;">Subscribers</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card" style="width: 28rem; margin-left: 100px">
+        <img class="card-img-top" src="assets/img1.jpg" alt="Card image cap" style="height: 250px;">
+        <div class="card-body" style="background-color: mediumorchid;">
+          <h5 class="card-title">VEGETABLES</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+            content.</p>
+          
+          <a class="btn btn-info" style="margin-left: 70px;">Subscribers</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+
+<div class="container">
+  <div class="row">
+
+
+
+    <div class="col-md-4">
+      <div class="card" style="width: 28rem;">
+        <img class="card-img-top" src="assets/img7.jpg" alt="Card image cap" style="height: 250px;">
+        <div class="card-body" style="background-color: darkgray">
+          <h5 class="card-title">ALL FRUITS</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+            content.</p>
+          <a class="btn btn-info" style="margin-left: 70px;">Subscribers</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card" style="width: 28rem; margin-left: 50px;">
+        <img class="card-img-top" src="assets/img5.jpg" alt="Card image cap" style="height: 250px;">
+        <div class="card-body" style="background-color:darkgoldenrod">
+          <h5 class="card-title">VEGETABLES</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+            content.</p>
+          <a class="btn btn-info" style="margin-left: 70px;">Subscribers</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card" style="width: 28rem; margin-left: 100px">
+        <img class="card-img-top" src="assets/img8.jpg" alt="Card image cap" style="height: 250px;">
+        <div class="card-body" style="background-color:rgb(132, 148, 148);">
+          <h5 class="card-title">VEGETABLES</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+            content.</p>
+
+          <a class="btn btn-info" style="margin-left: 70px;">Subscribers</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+
+
+<div style="background-color: grey; height: 400px; margin-top: 10%;">
+  <div style="background-color: rgb(219, 202, 186); height: 10px;"></div>
+  <h3 style="margin-left: 40%;margin-top: 50px;font-weight: bold; color: darkslategray">About-Us  Terms & Conditions  Privacy-Policy</h3>
+  
+  
+  
+  <ul class="icon">
+    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+    <li><a href="#"><i class="fa fa-google"></i></a></li>
+    <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+  </ul>
+  <br>
+  <a href="#" class="btn btn-info btn-lg" style="margin-top: 130px;margin-left: 850px;width: 200px;border-color: black"><i class="fa fa-android fa-2x" style="color: green;"></i>  Download<br>
+  <small style="color: black;font-weight: bold;">Android Version 1.4</small></a>
+  
+</div>
+
+
